@@ -14,10 +14,10 @@ import heroImage from "@images/hero-image.png";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
-import featureImage from "@images/features-image.avif";
-import construction from "@images/construction-image.avif";
-import tools from "@images/automated-tools.avif";
-import dashboard from "@images/dashboard-image.avif";
+import featureImage from "@images/features-image.png";
+import robust from "@images/robust-software.png";
+import tools from "@images/automated-tools.png";
+import dashboard from "@images/dashboard-image.png";
 
 const avatarSrcs: Array<string> = [
   "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
@@ -58,19 +58,19 @@ const avatarSrcs: Array<string> = [
 
   <FeaturesGeneral
     title="Meeting Industry Demands"
-    subTitle="At DJG, we tackle the unique challenges encountered in the hardware and construction sectors. From cutting-edge tools to expert services, we're dedicated to helping you overcome obstacles and achieve your goals."
+    subTitle="At DJG, we tackle the unique challenges encountered in the software development industry. Our solutions are designed to meet the demands of modern-day projects and deliver exceptional results in exceptional time."
     src={featureImage}
     alt="DJG products in floating boxes"
     features={features}
   />
 
   <FeaturesNavs
-    title=`Customize <span class="text-pale-500 dark:text-pale-400">DJG</span>'s offerings to perfectly suit your hardware and construction needs.`
+    title=`Customize <span class="text-pale-500 dark:text-pale-400">DJG</span>'s offerings to perfectly suit your needs.`
     tabs={[
       {
         heading: "Cutting-Edge Tools",
         content:
-          "Empower your projects with DJG's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
+          "DJG's cutting-edge tools are engineered to deliver top-notch performance. Our products are designed to meet the demands of modern-day projects, ensuring that you get the best results in the shortest time possible.",
         svg: "tools",
         src: tools,
         alt: "pale and black heavy equipment on brown grass field",
@@ -79,7 +79,7 @@ const avatarSrcs: Array<string> = [
       {
         heading: "Intuitive Dashboards",
         content:
-          "Navigate with ease using DJG's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
+          "Our intuitive dashboards are designed to provide you with a seamless experience. With DJG, you can easily track your projects, manage your team, and stay on top of your deadlines.",
         svg: "dashboard",
         src: dashboard,
         alt: "A screenshot or graphic representation of the intuitive dashboard",
@@ -88,9 +88,9 @@ const avatarSrcs: Array<string> = [
       {
         heading: "Robust Features",
         content:
-          "Minimize complexity, maximize productivity. DJG's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
+          "DJG's robust features are designed to help you get the job done. Our products are engineered to meet the demands of modern-day projects, ensuring that you get the best results in the shortest time possible.",
         svg: "house",
-        src: construction,
+        src: robust,
         alt: "Gray metal building frame near tower crane during daytime",
       },
     ]}
@@ -103,39 +103,37 @@ const avatarSrcs: Array<string> = [
     testimonials={[
       {
         content:
-          "DJG dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
-        author: "Samantha Ruiz",
-        role: "Chief Operating Officer | ConstructIt Inc.",
+          "DJG dramatically boosted our project efficiency. We were able to complete our projects in half the time it used to take us. The tools and services provided by DJG are top-notch.",
+        author: "Carlos",
+        role: "CEO, Intellsis",
         avatarSrc:
-          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+          "https://media.licdn.com/dms/image/D4E0BAQEcohTSGrDOcg/company-logo_200_200/0/1697696720463/intellsis_tech_logo?e=2147483647&v=beta&t=nAf4jMtp2fYxqIdIalVSYe2XgiDyY11LUXMz1IfUMZ0",
       },
     ]}
     statistics={[
       {
-        count: "70k+",
-        description:
-          "customers equipped — from DIY to major construction firms",
+        count: "5+",
+        description: "Projects completed in record time, thanks to DJG's team of experts.",
       },
       {
-        count: "35%",
+        count: "99%",
         description:
-          "uptick in project efficiency with DJG tools and services",
+          "Customer satisfaction rate, with clients praising DJG's top-quality tools.",
       },
       {
-        count: "15.3%",
+        count: "24/7",
         description:
-          "reduction in maintenance costs reported by long-term clients",
+          "Customer support, ensuring that you get the help you need when you need it.",
       },
       {
-        count: "2x",
-        description: "quicker assembly using innovative fastening solutions",
+        count: "100%",
+        description:
+          "Satisfaction guarantee, ensuring that you get the best results possible.",
       },
+      
     ]}
   />
 
-  <PricingSection pricing={pricing} />
-
-  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
   <HeroSectionAlt
     title="Let's Build Together"
