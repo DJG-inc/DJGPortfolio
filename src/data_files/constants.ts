@@ -2,9 +2,9 @@ import ogImageSrc from "@images/social.png";
 
 export const SITE = {
   title: "DJG",
-  tagline: "Top-quality Hardware Tools",
-  description: "DJG offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
-  description_short: "DJG offers top-tier hardware tools and expert construction services to meet all your project needs.",
+  tagline: "Top-quality software Tools",
+  description: "DJG offers top-tier software tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
+  description_short: "DJG offers top-tier software tools and expert construction services to meet all your project needs.",
   url: "https://DJG.uk",
   author: "Emil Gulamov",
 };
@@ -33,7 +33,7 @@ export const OG = {
   locale: "en_US",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}: : Hardware Tools & Construction Services`,
+  title: `${SITE.title}: : software Tools & Construction Services`,
   description: "Build your projects with DJG's top-quality software tools and expert software project development. DJG offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge tools. Start exploring now!",
   image: ogImageSrc,
 };

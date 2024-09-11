@@ -11,7 +11,8 @@ interface Props {
 }
 // Define classes to be used with the Image component
 const imageClass =
-  "absolute inset-0 h-full w-full object-cover object-center transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110";
+  // Darken the image by default
+  "absolute inset-0 h-full w-full object-cover object-center transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 filter brightness-75 dark:brightness-50";
 ---
 
 <!-- A clickable card that leads to the details of the product-->
