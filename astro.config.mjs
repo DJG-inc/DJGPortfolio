@@ -9,6 +9,7 @@ export default defineConfig({
   site: "https://djg.netlify.app",
   image: {
     domains: ["images.unsplash.com"],
+    formats: ["avif", "webp", "jpg", "png"],
   },
   prefetch: true,
   integrations: [
