@@ -99,31 +99,19 @@ const pageTitle: string = `Services | ${SITE.title}`;
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-<<<<<<< HEAD
     "@id": "https://DJG.dev/services",
     "url": "https://DJG.dev/services",
     "name": "Software Development Services | DJG",
     "description": "At DJG, we offer complete software development solutions, from technical consulting to the implementation of custom applications.",
-=======
-    "@id": "https://DJG.uk/services",
-    "url": "https://DJG.uk/services",
-    "name": "Expert Consultation Services | DJG",
-    "description": "Uniting expertise with your vision, DJG provides exceptional service and comprehensive solutions in the software and construction industry, from consultation to project completion.",
->>>>>>> ec62a05 (finished products section)
     "isPartOf": {
         "@type": "WebSite",
         "url": "https://DJG.dev",
         "name": "DJG",
-<<<<<<< HEAD
         "description": "DJG is a company specialized in software development and innovative technological solutions."
-=======
-        "description": "DJG offers top-tier software tools and expert construction services to meet all your project needs."
->>>>>>> ec62a05 (finished products section)
     },
     "inLanguage": "en-US"
   }}
 >
-<<<<<<< HEAD
 <MainSection
 title="We Unite Your Vision with Our Experience"
 subTitle="At DJG, we specialize in offering complete and customized solutions in the field of software development. Our team is committed to the success of your project, from conception to final deployment."
@@ -133,26 +121,6 @@ btnURL="#"
 img="/src/images/main2.png"
 imgAlt="Image description"
 />
-
-  
-=======
-  <!--MainSection is the introductory section of the page, it also contains a CTA button-->
-  <MainSection
-    title="Uniting Expertise with Your Vision"
-    subTitle="At DJG, we take pride in providing comprehensive solutions and exceptional service in the software and construction industry. Our experienced team is dedicated to supporting your project from inception to completion with a range of specialized services."
-    btnExists={true}
-    btnTitle="Schedule a Consultation"
-    btnURL="#"
-  />
-  <!-- RightSection and LeftSection contain details about various services along with pertinent imagery.
-  They alternate for variety in design.
-  The 'btnExists' property is used to toggle the display of a button in these sections.
-  When btnExists={true}, a button is displayed.
-  This can be used to link to more detailed information or related resources.
-  RightSection can also conditionally render one or two images based on the 'single' property.
-  If 'single' is true, it displays one image, otherwise it displays two.
-  -->
->>>>>>> ec62a05 (finished products section)
   {
     articles.map(article => {
       return article.isRightSection ? (
@@ -193,7 +161,7 @@ imgAlt="Image description"
         description: "projects delivered on time",
       },
       {
-        stat: "10,000+",
+        stat: "10+",
         description: "custom solutions developed",
       },
       {
