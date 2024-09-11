@@ -7,10 +7,6 @@ import netlify from "@astrojs/netlify/static"; // Updated to use Netlify
 
 export default defineConfig({
   site: "https://djg.netlify.app",
-  image: {
-    domains: ["images.unsplash.com"],
-    formats: ["avif", "webp", "jpg", "png"],
-  },
   prefetch: true,
   integrations: [
     tailwind(),
