@@ -3,7 +3,8 @@
 import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 
 // Destructure the props passed to the Astro component
-const { title, subTitle, btnExists, btnTitle, btnURL } = Astro.props;
+const { title, subTitle, btnExists, btnTitle, btnURL, img, imgAlt } = Astro.props;
+
 // Define TypeScript interface for props
 interface Props {
   title: string;
@@ -11,14 +12,16 @@ interface Props {
   btnExists?: boolean;
   btnTitle?: string;
   btnURL?: string;
+  img?: string; // Nueva propiedad para la imagen
+  imgAlt?: string; // Nueva propiedad para el alt de la imagen
 }
 ---
 
 <!-- Root section of the component -->
 <section
-  class="mx-auto mt-10 max-w-[85rem] px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-14 2xl:max-w-full"
+  class="mx-auto mt-10 max-w-[85rem] px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-14 2xl:max-w-full flex flex-col lg:flex-row lg:space-x-8"
 >
-  <div class="max-w-screen-md">
+  <div class="max-w-screen-md lg:w-1/2">
     <!-- Section title -->
     <h1
       class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"
@@ -40,4 +43,11 @@ interface Props {
       ) : null
     }
   </div>
+
+  <!-- Image section -->
+  {img && (
+    <div class="mt-8 lg:mt-0 lg:w-1/2">
+      <img src={img} alt={imgAlt} class="w-full h-auto object-cover" />
+    </div>
+  )}
 </section>
