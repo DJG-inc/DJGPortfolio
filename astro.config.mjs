@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
-import compressor from "astro-compressor";
+// import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
 import netlify from "@astrojs/netlify/static"; // Updated to use Netlify
 
@@ -9,7 +9,7 @@ export default defineConfig({
   site: "https://djg.netlify.app",
   image: {
     domains: ["images.unsplash.com"],
-    formats: ["avif", "webp", "jpg", "png", "svg"],
+    formats: ["avif", "webp", "jpg", "png"],
   },
   prefetch: true,
   integrations: [
@@ -93,10 +93,10 @@ export default defineConfig({
         },
       ],
     }),
-    compressor({
-      gzip: false,
-      brotli: true,
-    }),
+    // compressor({
+    //   gzip: false,
+    //   brotli: true,
+    // }),
   ],
   output: "static",
   experimental: {
