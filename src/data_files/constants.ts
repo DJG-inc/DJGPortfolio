@@ -1,11 +1,11 @@
-import ogImageSrc from "@images/social.png";
+import ogImageSrc from "@images/icon.png";
 
 export const SITE = {
   title: "DJG",
   tagline: "Top-quality software Tools",
   description: "DJG offers top-tier software tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
   description_short: "DJG offers top-tier software tools and expert construction services to meet all your project needs.",
-  url: "https://DJG.uk",
+  url: "https://djg.netlify.app/",
   author: "Emil Gulamov",
 };
 
